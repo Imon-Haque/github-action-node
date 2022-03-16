@@ -1,4 +1,4 @@
-name: every two minute cron job
+name: every five minute cron job
 on:
   schedule:
     - cron: '0/5 * * * *'
@@ -6,6 +6,5 @@ jobs:
   cron:
     runs-on: ubuntu-latest
     steps:
-      - name: two minute cron job
-        run: |
-          ping google.com
+      - name: five minute cron job
+        run: echo "Testing cron for 5 minutes"
