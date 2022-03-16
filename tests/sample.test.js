@@ -9,3 +9,9 @@ describe('Sum Test', () => {
         expect(3+5).toBe(8);
     });
 });
+
+describe('Testing Environmental Variable', () => {
+    it('author name should be the value of env', () => {
+        expect(process.env.AUTHOR_NAME).toBe("IMON_HAQUE");
+    });
+});

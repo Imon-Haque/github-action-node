@@ -1,0 +1,11 @@
+name: every two minute cron job
+on:
+  schedule:
+    - cron: '0/2 * * * *'
+jobs:
+  cron:
+    runs-on: ubuntu-latest
+    steps:
+      - name: two minute cron job
+        run: |
+          ping google.com
